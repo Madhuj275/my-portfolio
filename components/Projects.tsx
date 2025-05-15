@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { 
-  SiHtml5, SiCss3, SiJavascript, SiTailwindcss, 
+  SiHtml5, SiJavascript, SiTailwindcss, 
   SiTypescript, SiReact, SiNodedotjs, SiExpress,
   SiMongodb, SiNextdotjs,
   SiFlask,

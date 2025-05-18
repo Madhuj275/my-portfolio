@@ -1,5 +1,6 @@
 import React from 'react'
 import '../app/globals.css';
+import Image from 'next/image';
 import { MeteorDemo } from './magicui/meteors';
 import { Spotlight } from './ui/spotlight';
 import { TypewriterEffectSmoothDemo } from './magicui/TypeWriter';
@@ -8,7 +9,7 @@ import Button from './ui/Button';
 
 const Hero = () => {
   return (
-    <div id='hero' className=" min-h-screen w-full px-4 md:px-16 lg:px-72 py-10 md:py-32 ">
+    <div id='hero' className=" min-h-screen w-full px-4 md:px-16 lg:px-72 py-4 md:py-16 lg:py-24 ">
       <div className=''>
       <Spotlight className='top-16  left-10 md:left-32 md:top-20 h-screen' fill="white"/>
       </div>
@@ -23,11 +24,14 @@ const Hero = () => {
           >I&apos;m a 21-year-old B.Tech(CSE) student and aspiring full-stack developer. I&apos;m skilled in Next.js, and the MERN stack, with a passion for building creative and efficient applications. Currently, I&apos;m focused on honing my development skills and exploring new skills.
           </div>
         </div>
-        <div className="mb-6 md:mb-0">
-          <img
-            className="rounded-full h-40 w-40 md:h-40 md:w-40 lg:h-44 lg:w-44 object-cover object-top"
-            src="\images\prof3.png"
+        <div className="mb-6 md:mb-0 w-[150px] h-[150px]">
+          <Image
+            className="rounded-full object-cover object-top w-full h-full"
+            src="/images/prof3.png"
             alt="profile_pic"
+            width={150}
+            height={150}
+            priority
           />
         </div>
       </div>

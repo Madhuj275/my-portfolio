@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { 
-  SiHtml5, SiCss3, SiJavascript, SiTailwindcss, 
+  SiHtml5, SiJavascript, SiTailwindcss, 
   SiTypescript, SiReact, SiNodedotjs, SiExpress,
   SiMongodb, SiNextdotjs,
   SiFlask,
@@ -47,8 +48,17 @@ export default function Projects() {
         github: "https://github.com/Madhuj275/Certify-Dapp",
         techStack: ["Python", "Solidity", "Javascript"],
       },
+      {
+        title: "ShadowReport",
+        url: "https://shadow-report-theta.vercel.app/",
+        imageUrl: `/images/sr.png`,
+        github: "https://github.com/Madhuj275/ShadowReport",
+        techStack: ["Typescript", "Next.js", "React"],
+      },
+      
     ],
     mini: [
+      
       {
         title: "Blockchain Simulator",
         url: "https://blockchain-simulation-madhuj.netlify.app/",
@@ -174,7 +184,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1  sm:grid-cols-2 gap-6 lg:gap-24">
           {projects[activeTab].map((project, index) => (
             <div
               key={index}
@@ -185,10 +195,11 @@ export default function Projects() {
               <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-800/50 h-full transition-all duration-300  hover:shadow-lg hover:shadow-blue-500/10">
                 {/* Project Image */}
                 <div className="relative aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src={project.imageUrl || "/placeholder.svg"}
                     alt={project.title}
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
 

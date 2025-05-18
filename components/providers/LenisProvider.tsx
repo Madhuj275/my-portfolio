@@ -58,10 +58,8 @@ export default function LenisProvider({
     };
   }, [userOptions]);
 
+  // Initialize Lenis
   useEffect(() => {
-    // Only initialize Lenis once
-    if (lenis) return;
-    
     const lenisInstance = new Lenis(options);
 
     function raf(time: number) {
@@ -77,7 +75,7 @@ export default function LenisProvider({
       lenisInstance.destroy();
       setLenis(null);
     };
-  }, []); // Empty dependency array to run only once
+  }, [options]); // Only depend on options
 
   // Update options when they change
   useEffect(() => {

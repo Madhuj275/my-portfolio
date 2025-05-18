@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Personal Portfolio 
 
 A modern, responsive personal portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. This portfolio showcases my work, skills, and professional experience in an elegant and interactive way.
 
@@ -25,12 +25,12 @@ A modern, responsive personal portfolio website built with Next.js 14, TypeScrip
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Madhuj275/my-portfolio.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd portfolio
+cd my-portfolio
 ```
 
 3. Install dependencies:
@@ -69,13 +69,7 @@ This project is configured for easy deployment on Vercel:
 3. Vercel will automatically detect Next.js and set up the build configuration
 4. Deploy!
 
-## 🔧 Environment Variables
 
-Create a `.env.local` file in the root directory and add any necessary environment variables:
-
-```env
-# Add your environment variables here
-```
 
 ## 📝 Customization
 
@@ -84,23 +78,4 @@ Create a `.env.local` file in the root directory and add any necessary environme
 3. Add or remove sections as needed
 4. Update the metadata in `app/layout.tsx`
 
-## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio/issues).
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vercel](https://vercel.com/)
-- [TypeScript](https://www.typescriptlang.org/) 
